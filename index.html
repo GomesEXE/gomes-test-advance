@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="header">
+    <img src="assets/images/06-LOGO.png" alt="logo image">
+</div>
+
+<div class="main-container">
+    <div class="form-box">
+        <div class="conteudo">
+            <h1 class="subtitle"> Vem Tomar um café <br> com a gente</h1>
+
+            <form>
+                <p class="confirmation" id="confirmation">Sua mensagem foi enviada com sucesso</p><br>
+                <input type="text" name="name" id="name" placeholder="Nome" onblur="checkName()">
+                <p class="error-message" id="error-name">Insira seu nome completo.</p><br>
+                <input type="text" name="email" id="email" placeholder="Email" onblur="checkEmail()">
+                <p class="error-message" id="error-email">Insira um email válido</p><br>
+                <input type="text" name="message" id="message" placeholder="Mensagem" onblur="checkMessage()">
+                <p class="error-message" id="error-message">A mensagem deve ter conter pelo menos 4 palavra e 20
+                    caracteres </p><br>
+                <button class="enviar" type="button" onclick="confirmMessage()">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="image-box"></div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
